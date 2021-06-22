@@ -11,8 +11,16 @@ export class GifsService {
     return [...this._history];
   }
 
-  searchGifs(query:string){
-    this._history.unshift(query);
+  searchGifs(query:string=''){
+    
+    query=query.trim().toLocaleLowerCase();
+
+    if(!this._history.includes(query)){
+      this._history.unshift(query);
+      this._history=this._history.splice(0,10);
+    }
+
+ 
     console.log(this._history);
   }
 

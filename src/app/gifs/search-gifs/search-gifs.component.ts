@@ -14,6 +14,10 @@ constructor(private gifsService:GifsService){}
 search(){
 
   const value=this.txtSearch.nativeElement.value;
+
+  if(value.trim().length===0){
+    return ;
+  }
   this.gifsService.searchGifs(value);
   this.txtSearch.nativeElement.value='';
 }

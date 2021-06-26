@@ -12,12 +12,12 @@ export interface Gifs {
     bitly_gif_url:              string;
     bitly_url:                  string;
     embed_url:                  string;
-    username:                   Username;
+    username:                   any;
     source:                     string;
     title:                      string;
     rating:                     Rating;
     content_url:                string;
-    source_tld:                 SourceTLD;
+    source_tld:                 any;
     source_post_url:            string;
     is_sticker:                 number;
     import_datetime:            Date;
@@ -101,11 +101,6 @@ export enum Rating {
     G = "g",
 }
 
-export enum SourceTLD {
-    Empty = "",
-    WWWRealmadridCOM = "www.realmadrid.com",
-}
-
 export enum Type {
     GIF = "gif",
 }
@@ -115,24 +110,12 @@ export interface User {
     banner_image:  string;
     banner_url:    string;
     profile_url:   string;
-    username:      Username;
-    display_name:  DisplayName;
+    username:      any;
+    display_name:  any;
     description:   string;
     instagram_url: string;
     website_url:   string;
     is_verified:   boolean;
-}
-
-export enum DisplayName {
-    AtléticoDeMadrid = "Atlético de Madrid",
-    EuroLeague = "EuroLeague",
-    RealMadrid = "Real Madrid",
-}
-
-export enum Username {
-    Atleti = "atleti",
-    Euroleague = "euroleague",
-    Realmadrid = "realmadrid",
 }
 
 export interface Meta {

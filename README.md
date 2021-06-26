@@ -1,3 +1,5 @@
+<img src=https://github.com/SergioGordillo/GifsAppAngular/blob/main/gifsappangular.png alt="Home of GifsAppAngular"/>
+
 # Can I try this web app? :open_mouth:
 
 Yes, of course. You can download the app and execute it in your localhost.

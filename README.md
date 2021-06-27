@@ -2,7 +2,7 @@
 
 # Can I try this web app? :open_mouth:
 
-Yes, of course. You can download the app and execute it in your localhost.
+Yes, of course. You can try it at https://sergiogordillo.github.io/GifsAppAngular/.
 
 # What can you do with this web app? :thinking:
 
